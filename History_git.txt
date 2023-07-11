@@ -1,0 +1,688 @@
+    1  sudo apt get install git
+    2  git --version 
+    3  sudo apt install git
+    4  ls
+    5  cd snap
+    6  ls
+    7  exit
+    8  script -a ~/my_unix_session
+    9  $
+   10  git
+   11  ls
+   12  cd snap
+   13  ls
+   14  cd home
+   15  cd ..
+   16  man ls
+   17  ls -F
+   18  script -a ~/my_unix_session
+   19  ls
+   20  pwd
+   21  ls -F
+   22  ls --help
+   23  ls -F --help
+   24  man ls
+   25  ls - l
+   26  ls -l
+   27  ls -l -h
+   28  ls -t
+   29  ls -r
+   30  ls -rt
+   31  pwd
+   32  script -a ~/my_unix_session
+   33  pwd
+   34  ls -F Desktop
+   35  ls 
+   36  ls -F shell-lesson-data/
+   37  cd shell-lesson-data/
+   38  ls
+   39  cd shell-lesson-data/
+   40  ls
+   41  cd exercise-data/
+   42  ls
+   43  pwd
+   44  script -a ~/my_unix_session
+   45  exit
+   46  ls
+   47  pwd
+   48  ls -l
+   49  ls -r
+   50  ls -t
+   51  ls -rt
+   52  ls -r --help
+   53  ls
+   54  cd shell-lesson-data/
+   55  ls
+   56  cd exercise-data/
+   57  ls
+   58  cd ..
+   59  cd shell-lesson-data/exercise-data/
+   60  pwd
+   61  ls -F
+   62  ~ cd exercise-data/
+   63  cd ..
+   64  ~ cd shell-lesson-data/
+   65  cd -
+   66  ls -s exercise-data/
+   67  ls -F /
+   68  ls -S exercise-data
+   69  ls north-pacific-gyre/
+   70  ls north-pacific-gyre/goo
+   71  clear
+   72  pwd
+   73  cd exercise-data/writing/
+   74  ls -f
+   75  mkdir thesis
+   76  ls -F
+   77  ls -F thesis
+   78  mkdir -p ../project/data ../project/results
+   79  ls
+   80  cd ..
+   81  ls
+   82  cd project/
+   83  ls
+   84  ls -FR ../project
+   85  cd ..
+   86  cd writing/
+   87  cd thesis/
+   88  nano draft.txt
+   89  ls
+   90  touch my_file.txt
+   91  ls
+   92  rm my_file.txt 
+   93  ls
+   94  cd ~/Desktop/shell-lesson-data/exercise-data/writing
+   95  cd .
+   96  cd ..
+   97  mv thesis/draft.txt thesis/quotes.txt
+   98  ls -F thesis/
+   99  mv thesis/draft.txt .
+  100  mv thesis/quotes.txt .
+  101  ls
+  102  cp quotes.txt thesis/quotations.txt
+  103  ls -F thesis
+  104  cp -r thesis thesis_backup
+  105  ls
+  106  ls thesis thesis_backup
+  107  ls
+  108  rm quotes.txt
+  109  ls
+  110  rm thesis
+  111  rm -r thesis
+  112  ls
+  113  cd .
+  114  cd ..
+  115  ls
+  116  cd alkanes/
+  117  ls *t*ane.pdb
+  118  ls *t?ne.*
+  119  ls *t?ne.pdb
+  120  ls *t??ne.pdb
+  121  ls t??ne.pdb
+  122  clear
+  123  wc cubane.pdb
+  124  wc *.pdb
+  125  wc -l *.pdb
+  126  wc -l
+  127  wc -l *.pdb > lengths.txt
+  128  ls
+  129  ls lengths.txt
+  130  cat lengths.txt
+  131  sort -n lengths.txt
+  132  sort  lengths.txt
+  133  sort lengths.txt
+  134  sort -n lengths.txt > sorted-lengths.txt
+  135  head -n 5 sorted-lengths.txt
+  136  head -n 2 sorted-lengths.txt
+  137  echo ubuntu
+  138  echo hello > testfile01.txt
+  139  ls
+  140  cat testfile01.txt 
+  141  echo hello >> testfile02.txt
+  142  cat testfile02.txt 
+  143  rm -i testfile01.txt 
+  144  ls
+  145  ls testfile02.txt 
+  146  echo hello1 >> testfile02.txt
+  147  cat testfile02.txt 
+  148  rm -i testfile02.txt 
+  149  sort -n lengths.txt | head -n 1
+  150  wc -l *.pdb | sort -n
+  151  wc -l *.pdb | sort -n | head -n 1
+  152  wc -l *.txt
+  153  cd ..
+  154  cd -
+  155  cd north-pacific-gyre/
+  156  ls
+  157  wc -l *.txt
+  158  wc -l *.txt | sort -n | head -n 5
+  159  wc -l *.txt | sort -n | tail -n 5
+  160  ls *Z.txt
+  161  head -n 5 basilisk.dat minotaur.dat unicorn.dat
+  162  for filename in basilisk.dat minotaur.dat unicorn.dat; > do
+  163  >     echo $filename
+  164  >     head -n 2 $filename | tail -n 1
+  165  > done
+  166  cd ..
+  167  cd exercise-data/
+  168  cd creatures/
+  169  for filename in basilisk.dat minotaur.dat unicorn.dat; > do
+  170  for filename in basilisk.dat minotaur.dat unicorn.dat; > do
+  171  >     echo $filename
+  172  >     head -n 2 $filename | tail -n 1
+  173  > done
+  174  for x in basilisk.dat minotaur.dat unicorn.dat; > do
+  175  >     head -n 2 $x | tail -n 1
+  176  > done
+  177  for filename in basilisk.dat minotaur.dat unicorn.dat; do     echo $filename;     head -n 2 $filename | tail -n 1; done
+  178  for temperature in basilisk.dat minotaur.dat unicorn.dat; do     head -n 2 $temperature | tail -n 1; done
+  179  for datafile in *.pdb; > do
+  180  >     ls *.pdb
+  181  > done
+  182  for datafile in *.pdb; do     ls *.pdb; done
+  183  cd ..
+  184  ls
+  185  cd alkanes/
+  186  cd ..
+  187  cd .
+  188  cd alkanes/
+  189  for datafile in *.pdb; do     ls *.pdb; done
+  190  for datafile in *.pdb; do     ls $datafile; done
+  191  for filename in c*; do     ls $filename; done
+  192  for datafile in *.pdb; do     cat $datafile >> all.pdb; done
+  193  cat all.pdb 
+  194  claer
+  195  clear
+  196  for filename in *.dat; do     echo $filename;     head -n 100 $filename | tail -n 20; done
+  197  cp *.dat original-*.dat
+  198  cd ..
+  199  cp *.dat original-*.dat
+  200  cd creatures/
+  201  for filename in *.dat; do     echo $filename;     head -n 100 $filename | tail -n 20; done
+  202  cp *.dat original-*.dat
+  203  for filename in *.dat; do     cp $filename original-$filename; done
+  204  ls
+  205  cd north-pacific-gyre
+  206  for datafile in NENE*A.txt NENE*B.txt; do     echo $datafile; done
+  207  cd -
+  208  cd ..
+  209  cd north-pacific-gyre/
+  210  for datafile in NENE*A.txt NENE*B.txt; do     echo $datafile; done
+  211  history | tail -n 5
+  212  for datafile in NENE*A.txt NENE*B.txt; do echo $datafile; bash goostats.sh $datafile stats-$datafile; done
+  213  ls
+  214  for species in cubane ethane methane; do     for temperature in 25 30 37 40; do         echo $species-$temperature;     done; done
+  215  cd -
+  216  cd ls
+  217  ls
+  218  cd exercise-data/
+  219  cd alkanes/
+  220  ls
+  221  nano middle.sh
+  222  bash middle.sh
+  223  cat middle.sh 
+  224  nano middle.sh 
+  225  bash middle.sh octane.pdb
+  226  bash middle.sh pentane.pdb
+  227  nano middle.sh 
+  228  $ bash middle.sh pentane.pdb 15 5
+  229  bash middle.sh pentane.pdb 15 5
+  230  bash middle.sh pentane.pdb 20 5
+  231  nano sorted.sh
+  232  bash sorted.sh *.pdb ../creatures/*.dat
+  233  cd ../../north-pacific-gyre/
+  234  nano do-stats.sh
+  235  bash do-stats.sh NENE*A.txt NENE*B.txt
+  236  bash do-stats.sh NENE*A.txt NENE*B.txt | wc -l
+  237  for datafile in NENE*A.txt NENE*B.txt; do     echo $datafile;     bash goostats.sh $datafile stats-$datafile; done
+  238  cd ../../
+  239  cd shell-lesson-data/exercise-data/
+  240  cd alkanes/
+  241  nano longest.sh
+  242  bash longest.sh shell-lesson-data/exercise-data/writing txt
+  243  bash longest.sh shell-lesson-data/exercise-data/alkanes pdb
+  244  cd ..
+  245  bash longest.sh shell-lesson-data/exercise-data/alkanes pdb
+  246  cd ..
+  247  cd north-pacific-gyre/
+  248  nano do-errors.sh
+  249  $ bash do-errors.sh NENE*A.txt NENE*B.txt
+  250  bash do-errors.sh NENE*A.txt NENE*B.txt
+  251  bash -x do-errors.sh NENE*A.txt NENE*B.txt
+  252  cd ../cd..
+  253  cd ../..
+  254  ls
+  255  wc - l my_unix_session 
+  256  cd shell-lesson-data/exercise-data/writing
+  257  cat haiku.txt
+  258  grep not haiku.txt
+  259  grep The haiku.txt
+  260  grep -w The haiku.txt
+  261  grep -w "is not" haiku.txt
+  262  grep -n "it" haiku.txt
+  263  grep -n -w "the" haiku.txt
+  264  grep -n  "the" haiku.txt
+  265  grep -n -w -i "the" haiku.txt
+  266  grep -n -w -v "the" haiku.txt
+  267  grep -r Yesterday .
+  268  grep --help
+  269  grep -E "^.o" haiku.txt
+  270  cd ..
+  271  find.
+  272  find .
+  273  find . -type d
+  274  find . -type f
+  275  cd creatures/
+  276  find . -type f
+  277  find . -type d
+  278  find . -type f
+  279  cd ..
+  280  find . -name *.txt
+  281  find . -name "*.txt"
+  282  wc -l $(find . -name "*.txt")
+  283  grep "searching" $(find . -name "*.txt")
+  284  exit
+  285  script -a ~/my_unix_session
+  286  sudo apt get install git
+  287  sudo apt get install gitTiger#1234
+  288  sudo apt get install git
+  289  Tiger#1234
+  290  sudo apt get install git
+  291  git --version
+  292  git config --list --show-origin
+  293  git config
+  294  clear
+  295  sudo apt install git-all
+  296  sudo apt update
+  297  apt list --upgradable
+  298  git config --list --show-origin
+  299  git config --list
+  300  clear
+  301  Sudo apt-get install git
+  302  sudo apt-get install git
+  303  sudo apt update
+  304  sudo apt install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev build-essential
+  305  wget https://github.com/git/git/archive/refs/tags/v2.31.1.tar.gz
+  306  tar -xvf v2.31.1.tar.gz
+  307  cd git-2.31.1
+  308  make configure
+  309  ./configure --prefix=/usr/local
+  310  cd ..
+  311  git config --list --show-origin
+  312  cd git-2.31.1
+  313  ls
+  314  cd ..
+  315  ls
+  316  rm git-2.31.1/
+  317  rm -r git-2.31.1/
+  318  ls
+  319  ls -F
+  320  rm v2.31.1.tar.gz 
+  321  ls
+  322  sudo apt update && sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip
+  323  git clone https://github.com/git/git.git
+  324  unzip git_source.zip
+  325  ls
+  326  unzip git.zip
+  327  cd git/
+  328  unzip git.zip
+  329  unzip git_source.zip
+  330  clear
+  331  git config --global user.name "Abilash"
+  332  git config --global user.email "abilash.kanagasa@tigeranalytics.com"
+  333  git config --list
+  334  cd ..
+  335  git config --list
+  336  clear
+  337  git config --list
+  338  ls
+  339  cd shell-lesson-data/
+  340  gitgit init
+  341  git init
+  342  clear
+  343  git remote add origin https://github.com/Abilash-TA/Git_session.git
+  344  git branch -M main
+  345  git push -u origin main
+  346  git remote add origin https://github.com/Abilash-TA/Git_session.git
+  347  cd ..
+  348  git clone https://github.com/Abilash-TA/Git_session.git
+  349  cd shell-lesson-data/
+  350  git init
+  351  git add *.c
+  352  git add .
+  353  git commit -m "Add files"
+  354  git remote add origin remote_repository_url
+  355  git push origin master
+  356  git pull origin branch-name
+  357  git remote add origin remote_repository_url
+  358  git push origin master
+  359  git pull origin branch-name
+  360  git pull origin Git_session
+  361  clear
+  362  exit
+  363  git remote add origin https://github.com/Abilash-TA/Git_session.git
+  364  git config --list
+  365  git clone https://github.com/Abilash-TA/Git_session.git
+  366  cd shell-lesson-data/
+  367  git add .
+  368  git commit -m "Push files"
+  369  git status
+  370  git push origin main
+  371  GIT STATUS
+  372  git status
+  373  ls
+  374  cd exercise-data/
+  375  ls
+  376  rm -i - numbers.txt
+  377  git status
+  378  git commit -m "Removed numbers.txt file"
+  379  git push origin main
+  380  git commit -m "Removed numbers.txt file"
+  381  git commit -a "Removed numbers.txt file"
+  382  git commit  "Removed numbers.txt file"
+  383  git push origin main
+  384  git status 
+  385  git commit -a
+  386  git push origin main
+  387  git status 
+  388  git commit -m "deleted file "
+  389  git push origin main
+  390  git push -u origin main
+  391  git status
+  392  git commit -m "deleted file "
+  393  git rm numbers.txt
+  394  git commit -m "deleted file "
+  395  git push -u origin main
+  396  git diff
+  397  git status
+  398* echo 'My Project' > READ
+  399  ls
+  400  cat README
+  401  git diff
+  402  git status
+  403  git add README
+  404  git status
+  405  git status -s
+  406  ls
+  407  cat .gitignore
+  408  nano .gitignore
+  409  cat .gitignore
+  410  git status -s
+  411  git status 
+  412  ls
+  413  cd writing/
+  414* git push 
+  415  nano haiku.txt
+  416  git status 
+  417  git diff
+  418  git diff -staged
+  419  git diff --staged
+  420  git status 
+  421  git add haiku.txt 
+  422  git status 
+  423  nano haiku.txt
+  424  git status 
+  425  git status -s
+  426  git diff -staged
+  427  git diff --staged
+  428  git commit -w "added and modified files"
+  429  git commit
+  430  git commit -m "added and modified files"
+  431  git status 
+  432  git add haiku.txt
+  433  git commit -m "added and modified files(haiku.txt)"
+  434  git status 
+  435  git push -u origin main
+  436  cd ..
+  437  echo 'Mv command' > mv.txt
+  438  ls
+  439  git status
+  440  git commit -a -m "added mv.txt"
+  441  git status
+  442  git add mv.txt
+  443  git status
+  444  git commit -a -m "added mv.txt"
+  445  git status
+  446  git push 
+  447  git status
+  448  cd .. 
+  449  cd ..
+  450  git clone https://github.com/schacon/simplegit-progit
+  451  ls
+  452  git log
+  453  cd shell-lesson-data/
+  454  git log
+  455  cd ..
+  456  cd simplegit-progit/
+  457  git log -p -2
+  458  git log --stat
+  459  git log --pretty=oneline
+  460  git log --pretty=format:"%h - %an, %ar : %s"
+  461  git log --since=2.weeks
+  462  git log --pretty="%h - %s" --author='Junio C Hamano' --since="2008-10-01"    --before="2008-11-01" --no-merges -- t/
+  463  git log --pretty=format:"%h - %an, %ar : %s"
+  464  git log --pretty="%h - %s"
+  465  git log --pretty="%h - %s" --author='Junio C Hamano'
+  466  ls
+  467  echo "initial commit" > init.txt
+  468  git status
+  469  clear
+  470  cd ../
+  471  cd shell-lesson-data/
+  472  ld
+  473  ls
+  474  cd exercise-data/
+  475  ls
+  476  nano mv.txt
+  477  git status
+  478* git 
+  479  git commit -a -m "commit"
+  480  git push
+  481  git commit -amend
+  482  git commit --amend
+  483  git push
+  484  ls
+  485  git status
+  486  git add cv.txt
+  487  echo "reset file" > reset.txt
+  488  status
+  489  git status
+  490  gti add reset.txt
+  491  git add reset.txt
+  492  git status
+  493  git reset Head reset.txt
+  494  git reset HEAD reset.txt
+  495  git status
+  496  rm reset.txt 
+  497  ls
+  498  git checkout --mv.txt
+  499  cat mv.txt
+  500  nano mv.txt
+  501  git status
+  502  git checkout --mv.txt
+  503  git checkout -mv.txt
+  504  git checkout -- mv.txt
+  505  cat mv.txt
+  506  git remote
+  507  git remote-v
+  508  git remote-v -v
+  509  git remote -v
+  510  git clone https://github.com/schacon/ticgit
+  511  ls
+  512  rm -r ticget
+  513  rm -r ticgit
+  514  ls
+  515  rm -r ticgit
+  516  ls
+  517  cd ..
+  518  git clone https://github.com/schacon/ticgit
+  519  cd ticgit/
+  520  git remote
+  521  git remote -v
+  522  cd grit
+  523  git remote -vgit remote add pb https://github.com/paulboone/ticgit
+  524  git remote add pb https://github.com/paulboone/ticgit
+  525  git fetch pb
+  526  cd ..
+  527  rm -r ticgit/
+  528  rm -r -i ticgit/
+  529  y
+  530  clear
+  531  cd ticgit/
+  532  ls
+  533  git fetch pb
+  534  git remote add pb https://github.com/paulboone/ticgit
+  535  git remote
+  536  git clone https://github.com/schacon/ticgit
+  537  cd..
+  538  cd ..
+  539  git clone https://github.com/schacon/ticgit
+  540  git remote
+  541  cd ticgit/
+  542  git remote
+  543  git remote add pb https://github.com/paulboone/ticgit
+  544  git remote
+  545  git remote -v
+  546  git fetch pb
+  547  git push origin master
+  548  git remote show origin
+  549  git remote rename pb paul
+  550  git remote
+  551  git remote remove paul
+  552  git remote
+  553  git tag
+  554  git tag -a v1.4 -m "my version 1.4"
+  555  git tag
+  556  git show v1.4
+  557  git tag v1.4-lw
+  558  git tag
+  559  git show v1.4-lw
+  560  cd ..
+  561  cd shell-lesson-data/
+  562  git log --pretty=oneline
+  563  git tag -a v1.2 8f1f2e
+  564  git tag -d v1.4-lw
+  565  git tag -d v1.4
+  566  git tag
+  567  git tag v1.4-lw
+  568  git tag -d v1.4
+  569  git tag -d v1.4-lw
+  570  git last
+  571  git config --global alias.st status
+  572  git status
+  573  git st
+  574  history 
+  575  history >> history.txt
+  576  git st
+  577  rm history.txt 
+  578  ls
+  579  git branch testing
+  580  git st
+  581  git push testing
+  582  git checkout testing
+  583  git branch -a
+  584  git commit -a -m 'Make a change in new branch(testing)'
+  585  git pushgit push -u origin testing
+  586  git push -u origin testing
+  587  git log --oneline --decorate --graph --all
+  588  git branch
+  589  git bran
+  590  git branch
+  591  git checkout -b iss53
+  592  vim index.html
+  593  ls
+  594  nano index.html
+  595  ls
+  596  nano index
+  597  ls
+  598  git commit -a -m 'Create new footer [issue 53]'
+  599  git checkout master
+  600  git checkout origin
+  601  git branch
+  602  git checkout main
+  603  git checkout -b hotfix
+  604  ls
+  605  nano index(hotfix)
+  606  nano index_hotfix
+  607  git commit -a -m 'Fix broken email address'
+  608  git checkout master
+  609  git checkout main
+  610  git merge hotfix
+  611  git branch -d hotfix
+  612  git checkout iss53
+  613  ls
+  614  git commit -a -m 'Finish the new footer [issue 53]'
+  615  git merge iss53
+  616  git branch -d iss53
+  617  git merge iss53
+  618  git status
+  619  git branch
+  620  git mergetool
+  621  git branch -d iss53
+  622  git push
+  623  git branch
+  624  git checkout main
+  625  git branch
+  626  git branch -v
+  627  git branch --merged
+  628  git branch --no-merged
+  629  git branch -d testing
+  630  git branch -d iss53
+  631  git push -u origin testing
+  632  git checkout -b iss53
+  633  git push -u origin iss53
+  634  git branch --move iss53 issue
+  635  git branch 
+  636  git push --set-upstream origin issue
+  637  git branch --all
+  638  git push origin --delete iss53
+  639  git branch --move main master
+  640  git branch --all
+  641  git push --set-upstream origin main
+  642  git push --set-upstream origin master
+  643  git push origin --delete main
+  644  git branch --move master main
+  645  git branch --all
+  646  git push --set-upstream origin main
+  647  git push origin --delete master
+  648  cd ..
+  649  cd blink/
+  650  git checkout -b slow-blink
+  651  sed -i 's/1000/3000/' blink.ino
+  652  git diff --word-diff
+  653  git commit -a -m 'Change delay to 3 seconds'
+  654  git push origin slow-blink
+  655  cd ..
+  656  rm -r blink/
+  657  ls
+  658  git colne https://github.com/Abilash-TA/blink
+  659  git clone https://github.com/Abilash-TA/blink
+  660  git checkout -b slow-blink
+  661  git checkout slow-blink
+  662  cd blink/
+  663  git checkout slow-blink
+  664  git checkout -b slow-blink
+  665  sed -i 's/1000/3000/' blink.ino
+  666  git diff --word-diff
+  667  git commit -a -m 'Change delay to 3 seconds'
+  668  git push origin slow-blink
+  669  git remote add upstream https://github.com/schacon/blink
+  670  git fetch upstream
+  671  git merge upstream/master
+  672  vim blink.ino
+  673  ls
+  674  git add blink.ino
+  675  git commit
+  676  git push origin slow-blink
+  677  ls
+  678  cd ..
+  679  ls
+  680  it ls-remote https://github.com/schacon/blink
+  681  git ls-remote https://github.com/schacon/blink
+  682  git fetch origin refs/pull/958/head
+  683  ls
+  684  cd blink/
+  685  git fetch origin refs/pull/958/head
+  686  cd ..
+  687  ls
+  688  history >> History_git.txt
